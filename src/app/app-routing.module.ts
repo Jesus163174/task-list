@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path:'activities',
     component:ActivitiesComponent
+  },
+  {
+    path:'activities/add',
+    component:AddActivitiesComponent
   }
 ];
 

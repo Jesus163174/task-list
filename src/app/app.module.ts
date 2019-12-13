@@ -8,7 +8,8 @@ import { ActivitiesComponent } from './pages/activities/activities.component';
 import { AddActivitiesComponent } from './pages/add-activities/add-activities.component';
 import { ToDoComponent } from './pages/activities/to-do/to-do.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

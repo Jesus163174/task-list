@@ -1,1 +1,17 @@
-<p>add-activities works!</p>
+<div class="content">
+
+    <div class="header-title">
+        <h3>Agregar Actividad</h3><hr><br>
+        <form action="">
+            <div class="form">
+                <label for="">Titulo de la actividad</label> <br>
+                <input [(ngModel)]="form.title" name="title" type="text" placeholder="Titulo" class="input-lg">
+            </div>
+            <div class="form">
+                <label for="">Descripción de la actividad</label> <br>
+              <textarea [(ngModel)]="form.desc" name="desc" placeholder="Descripcion" id="" cols="30" rows="10"></textarea>
+            </div> <br> <br>
+            <a (click)="onCreate()" class="bg-success">Agregar</a>
+        </form>
+    </div>
+</div>

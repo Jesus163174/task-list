@@ -4,107 +4,16 @@
     </div>
 
     <div class="activities">
-        <div class="card">
+        <div class="card" *ngFor="let a of ac">
             <div class="header-card">
-                <h4 class="title-card">1.Ir al Cine</h4>
+                <h4 class="title-card">{{a.id}}.{{a.title}}</h4>
             </div>
             <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eius!
+                {{a.description}}
             </div>
             <div class="card-footer">
                 <a class="bg-primary">Editar</a>
-                <a class="bg-danger">Eliminar</a>
-                <a class="bg-success">Actividades</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="header-card">
-                <h4 class="title-card">1.Ir al Cine</h4>
-            </div>
-            <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eius!
-            </div>
-            <div class="card-footer">
-                <a class="bg-primary">Editar</a>
-                <a class="bg-danger">Eliminar</a>
-                <a class="bg-success">Actividades</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="header-card">
-                <h4 class="title-card">1.Ir al Cine</h4>
-            </div>
-            <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eius!
-            </div>
-            <div class="card-footer">
-                <a class="bg-primary">Editar</a>
-                <a class="bg-danger">Eliminar</a>
-                <a class="bg-success">Actividades</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="header-card">
-                <h4 class="title-card">1.Ir al Cine</h4>
-            </div>
-            <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eius!
-            </div>
-            <div class="card-footer">
-                <a class="bg-primary">Editar</a>
-                <a class="bg-danger">Eliminar</a>
-                <a class="bg-success">Actividades</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="header-card">
-                <h4 class="title-card">1.Ir al Cine</h4>
-            </div>
-            <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eius!
-            </div>
-            <div class="card-footer">
-                <a class="bg-primary">Editar</a>
-                <a class="bg-danger">Eliminar</a>
-                <a class="bg-success">Actividades</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="header-card">
-                <h4 class="title-card">1.Ir al Cine</h4>
-            </div>
-            <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eius!
-            </div>
-            <div class="card-footer">
-                <a class="bg-primary">Editar</a>
-                <a class="bg-danger">Eliminar</a>
-                <a class="bg-success">Actividades</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="header-card">
-                <h4 class="title-card">1.Ir al Cine</h4>
-            </div>
-            <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eius!
-            </div>
-            <div class="card-footer">
-                <a class="bg-primary">Editar</a>
-                <a class="bg-danger">Eliminar</a>
-                <a class="bg-success">Actividades</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="header-card">
-                <h4 class="title-card">1.Ir al Cine</h4>
-            </div>
-            <div class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eius!
-            </div>
-            <div class="card-footer">
-                <a class="bg-primary">Editar</a>
-                <a class="bg-danger">Eliminar</a>
+                <a (click)="onDelete(a.id)" class="bg-danger">Eliminar</a>
                 <a class="bg-success">Actividades</a>
             </div>
         </div>
