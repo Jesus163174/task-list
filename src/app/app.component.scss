@@ -1,0 +1,45 @@
+#header{
+    background: indigo;
+    color:#fff;
+    box-shadow: 3px 1px 3px #000;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.container{
+    width: 85%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color:#fff;
+    font-size:18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navigation{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation a{
+    margin-left: 25px;
+    color: #dedede;
+    cursor: pointer;
+}
+.navigation a:hover{
+    color:red;
+}
+
+.profile a{
+    margin-left: 10px;
+    color: #dedede;
+    cursor: pointer;
+}
