@@ -10,13 +10,15 @@ import { ToDoComponent } from './pages/activities/to-do/to-do.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule} from '@angular/forms';
+import { ActivityEditComponent } from './pages/activities/activity-edit/activity-edit.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ActivitiesComponent,
     AddActivitiesComponent,
-    ToDoComponent
+    ToDoComponent,
+    ActivityEditComponent
   ],
   imports: [
     BrowserModule,

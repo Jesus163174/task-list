@@ -14,7 +14,7 @@
                 Fecha: ({{a.fecha_hora | date}})
             </div>
             <div class="card-footer">
-                <a class="bg-primary">Editar</a>
+                <a routerLink="/activity/{{a.id}}" class="bg-primary">Editar</a>
                 <a (click)="onDelete(a.id)" class="bg-danger">Eliminar</a>
                 <a class="bg-success">Actividades</a>
             </div>

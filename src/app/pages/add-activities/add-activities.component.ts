@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AddActivitiesComponent implements OnInit {
     public form: any = {};
+   
     constructor(private acS: ActivitySService, private router: Router) { }
 
     ngOnInit() {
