@@ -2,12 +2,12 @@
     <div class="container">
         <a class="logo">Taks</a>
         <nav class="navigation">
-            <a  routerLink="/activities">Mis actividades</a>
-            <a  routerLink="/activities/add">Agregar</a>
+            <a  routerLink="/activities">My tasks</a>
+            <a  routerLink="/activities/add">add</a>
         </nav>
         <div class="profile">
             <a *ngIf="user">{{user.username}}</a>
-            <a (click)="logout()">Salir</a>
+            <a (click)="logout()">Logout</a>
         </div>
 
     </div>
