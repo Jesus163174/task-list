@@ -1,1 +1,23 @@
-<p>to-do works!</p>
+<div class="container">
+    
+    <div class="content">
+        <h4>{{activity.title}} (listado de cosas por hacer)</h4>
+        <hr>
+        <ul>
+            <li *ngFor="let a of listAc">
+                <span style="margin-bottom: 10px;">{{a.title}}</span> <br>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h4>Agregar nuevo</h4>
+        <form action="">
+            <div class="form">
+                <label for="">Titulo</label>
+                <input type="text" [(ngModel)]="todo.title" name="title">
+            </div> <br>
+            <a class="">Agregar</a>
+        </form>
+    </div>
+</div>

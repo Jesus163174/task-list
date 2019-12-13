@@ -16,7 +16,7 @@
             <div class="card-footer">
                 <a routerLink="/activity/{{a.id}}" class="bg-primary">Editar</a>
                 <a (click)="onDelete(a.id)" class="bg-danger">Eliminar</a>
-                <a class="bg-success">Actividades</a>
+                <a routerLink="/activity/{{a.id}}/todoList" class="bg-success">Actividades</a>
             </div>
         </div>
 

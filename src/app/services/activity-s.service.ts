@@ -25,7 +25,7 @@ export class ActivitySService {
         })
     }
     get(id: any) {
-        return this.http.get("http://127.0.0.1:3333/activity/" + id);
+        return this.http.get("http://127.0.0.1:3333/activity/"+id);
     }
 
     edit(request: any,id:any) {

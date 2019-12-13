@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path:'activity/:id',
     component:ActivityEditComponent
+  },
+  {
+    path:'activity/:id/todoList',
+    component:ToDoComponent
   }
 ];
 
