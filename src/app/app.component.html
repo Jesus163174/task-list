@@ -2,13 +2,12 @@
     <div class="container">
         <a class="logo">Actividades</a>
         <nav class="navigation">
-            <a routerLink="/activities">Mis actividades</a>
-            <a routerLink="/activities/add">Agregar</a>
-            <a>Completado</a>
+            <a  routerLink="/activities">Mis actividades</a>
+            <a  routerLink="/activities/add">Agregar</a>
         </nav>
         <div class="profile">
-            <a>{{user}}</a>
-            <a>Salir</a>
+            <a *ngIf="user">{{user.username}}</a>
+            <a (click)="logout()">Salir</a>
         </div>
 
     </div>

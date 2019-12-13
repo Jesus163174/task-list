@@ -1,0 +1,11 @@
+<div class="content">
+    <div class="form">
+        <label for="">Email: </label>
+        <input [(ngModel)]="login.email" name="email" type="email" class="" placeholder="">
+    </div>
+    <div class="form">
+        <label for="">Password: </label>
+        <input [(ngModel)]="login.password" name="password" type="password" class="" placeholder="">
+    </div> <br>
+    <a (click)="onLogin()" class="bg-success">Acceder</a>
+</div>

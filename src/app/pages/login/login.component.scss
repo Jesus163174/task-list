@@ -1,0 +1,38 @@
+.content{
+    padding: 30px 30px;
+    background: #fff;
+    width: 40%;
+    margin:auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.form{
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.form label{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.form input,textarea {
+    padding: 12px;
+    border-radius: 3px;
+    border:1px solid #dedede;
+}
+
+a{
+    margin-top:10px;
+    padding: 10px;
+    color:#fff;
+    border-radius:3px;
+    box-shadow: 1px 0px 2px #000;
+    cursor: pointer;
+    background: seagreen;
+}

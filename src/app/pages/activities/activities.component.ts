@@ -8,9 +8,11 @@ import { ActivitySService } from 'src/app/services/activity-s.service';
 })
 export class ActivitiesComponent implements OnInit {
   public ac:any =[];
+  public user:any = [];
   constructor(private acS:ActivitySService) { }
 
   ngOnInit() {
+    this.user = JSON.parse(localStorage.getItem('user'));
     this.getAllActivities();
   }
 
