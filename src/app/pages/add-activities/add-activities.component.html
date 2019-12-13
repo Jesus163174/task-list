@@ -10,7 +10,12 @@
             <div class="form">
                 <label for="">Descripción de la actividad</label> <br>
               <textarea [(ngModel)]="form.desc" name="desc" placeholder="Descripcion" id="" cols="30" rows="10"></textarea>
-            </div> <br> <br>
+            </div> <br>
+            <div class="form">
+                <label for="">Fecha y hora</label>
+                <input type="datetime-local" [(ngModel)]="form.fecha_hora" name="fecha_hora">
+            </div>
+            <br> <br>
             <a (click)="onCreate()" class="bg-success">Agregar</a>
         </form>
     </div>

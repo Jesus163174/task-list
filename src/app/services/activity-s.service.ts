@@ -21,7 +21,7 @@ export class ActivitySService {
       "user_id":1,
       "title":request.title,
       "description":request.desc,
-      "fecha_hora":"2013-01-01 00:00:00"
+      "fecha_hora":request.fecha_hora
     })
   }
 }

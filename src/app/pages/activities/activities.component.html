@@ -9,7 +9,9 @@
                 <h4 class="title-card">{{a.id}}.{{a.title}}</h4>
             </div>
             <div class="card-content">
-                {{a.description}}
+                {{a.description}}. <br>
+
+                Fecha: ({{a.fecha_hora | date}})
             </div>
             <div class="card-footer">
                 <a class="bg-primary">Editar</a>
