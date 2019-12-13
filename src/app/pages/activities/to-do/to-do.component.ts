@@ -35,4 +35,12 @@ export class ToDoComponent implements OnInit {
     });
   }
 
+  onCreate(){
+    this.list.post(this.activity_id,this.todo).subscribe((res:any)=>{
+      this.getList();
+    },error=>{
+      alert(error.message);
+    });
+  }
+
 }
