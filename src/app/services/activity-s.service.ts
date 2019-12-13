@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ActivitySService {
 
-    private api = "http://127.0.0.1:3333/activities/1";
+    private api = "https://final-soa.herokuapp.com/activities/1";
     constructor(private http: HttpClient) { }
 
     index() {
@@ -14,10 +14,10 @@ export class ActivitySService {
     }
     delete(id: any) {
         //console.log("http://127.0.0.1:3333/activities/"+id);
-        return this.http.put("http://127.0.0.1:3333/activities/" + id, {});
+        return this.http.put("https://final-soa.herokuapp.com/" + id, {});
     }
     post(request: any) {
-        return this.http.post("http://127.0.0.1:3333/activities/", {
+        return this.http.post("https://final-soa.herokuapp.com/activities/", {
             "user_id": 1,
             "title": request.title,
             "description": request.desc,
@@ -25,11 +25,11 @@ export class ActivitySService {
         })
     }
     get(id: any) {
-        return this.http.get("http://127.0.0.1:3333/activity/"+id);
+        return this.http.get("https://final-soa.herokuapp.com/activity/"+id);
     }
 
     edit(request: any,id:any) {
-        return this.http.put("http://127.0.0.1:3333/activity/"+id, {
+        return this.http.put("https://final-soa.herokuapp.com/activity/"+id, {
             "title": request.title,
             "description": request.description,
         });

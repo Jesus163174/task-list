@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin(){
-    this.http.post("http://127.0.0.1:3333/login",{
+    this.http.post("https://final-soa.herokuapp.com/login",{
       email:this.login.email,
       password:this.login.password
     }).subscribe((res:any)=>{

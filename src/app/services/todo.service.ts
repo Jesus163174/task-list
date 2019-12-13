@@ -10,11 +10,11 @@ export class TodoService {
   constructor(private http:HttpClient) { }
 
   index(id:any){
-    return this.http.get("http://localhost:3333/todo/"+id);
+    return this.http.get("https://final-soa.herokuapp.com/"+id);
   }
 
   post(activity_id:any,request:any) {
-    return this.http.post("http://localhost:3333/todo/"+activity_id,{
+    return this.http.post("https://final-soa.herokuapp.com/todo/"+activity_id,{
       'title':request.title,
       'activity_id':activity_id
     });
